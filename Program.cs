@@ -1,9 +1,13 @@
 ﻿namespace CS_MovieDB;
 
-class Program
+public static class Program
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
-    }
+	private static readonly MockMovies MockMovies = new();
+
+	private static void Main()
+	{
+		Library library = new();
+
+		library.PrintLibrary();
+	}
 }
